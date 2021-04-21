@@ -1,12 +1,12 @@
 <a href="<?php echo base_url();?>index.php?admin/user_create/" class="btn btn-primary" style="margin-bottom: 20px;">
 <i class="fa fa-plus"></i>
-Create user
+Crear usuario
 </a>
 <div class="row-fluid">
 	<div class="span12">
 		<div class="grid simple ">
 			<div class="grid-title">
-				<h4>User List</h4>
+				<h4>Lista de usuarios</h4>
 			</div>
 			<div class="grid-body ">
 				<table class="table table-hover table-condensed" id="example">
@@ -15,9 +15,9 @@ Create user
 							<th>
 								#
 							</th>
-							<th>User Email</th>
-							<th>Subscribed Package</th>
-							<th>Manage</th>
+							<th>Correo electronico</th>
+							<th></th>
+							<th>Operacion</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -41,9 +41,9 @@ Create user
 							</td>
 							<td>
 								<a href="<?php echo base_url();?>index.php?admin/user_edit/<?php echo $row['user_id'];?>" class="btn btn-info btn-xs btn-mini">
-								edit</a>
-								<a href="<?php echo base_url();?>index.php?admin/user_delete/<?php echo $row['user_id'];?>" class="btn btn-danger btn-xs btn-mini" onclick="return confirm('Want to delete?')">
-								delete</a>
+								editar</a>
+								<a href="<?php echo base_url();?>index.php?admin/user_delete/<?php echo $row['user_id'];?>" class="btn btn-danger btn-xs btn-mini" onclick="return confirm('Quiere eliminarlo?')">
+								borrar</a>
 							</td>
 						</tr>
 						<?php endforeach;?>

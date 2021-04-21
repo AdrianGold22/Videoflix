@@ -6,7 +6,7 @@
 	?>
 <div class="row" style="margin:20px 60px;">
 	<h4 style="text-transform: capitalize;">
-		My List (<?php echo count($movies) + count($series);?>)
+		Favoritos (<?php echo count($movies) + count($series);?>)
 	</h4>
 	<div class="content">
 		<div class="grid">

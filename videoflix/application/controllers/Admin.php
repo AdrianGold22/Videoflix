@@ -300,7 +300,7 @@ class Admin extends CI_Controller {
 	function user_list()
 	{
 		$page_data['page_name']		=	'user_list';
-		$page_data['page_title']	=	'Manage user';
+		$page_data['page_title']	=	'Gestionar usuario';
 		$this->load->view('backend/index', $page_data);
 	}
 	
@@ -313,7 +313,7 @@ class Admin extends CI_Controller {
 			redirect(base_url().'index.php?admin/user_list' , 'refresh');
 		}
 		$page_data['page_name']		=	'user_create';
-		$page_data['page_title']	=	'Create user';
+		$page_data['page_title']	=	'Crear usuario';
 		$this->load->view('backend/index', $page_data);
 	}
 	
@@ -327,7 +327,7 @@ class Admin extends CI_Controller {
 		}
 		$page_data['edit_user_id']	=	$edit_user_id;
 		$page_data['page_name']		=	'user_edit';
-		$page_data['page_title']	=	'Edit user';
+		$page_data['page_title']	=	'Editar usuario';
 		$this->load->view('backend/index', $page_data);
 	}
 	

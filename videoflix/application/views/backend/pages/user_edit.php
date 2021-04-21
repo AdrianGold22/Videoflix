@@ -11,7 +11,7 @@
 					<div class="row">
 						<div class="col-md-8 col-sm-8 col-xs-8">
 							<div class="form-group">
-								<label class="form-label">User Name</label>
+								<label class="form-label">Nombre del usuario</label>
 								<span class="help"></span>
 								<div class="controls">
 									<input type="text" class="form-control" name="name" 
@@ -19,7 +19,7 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="form-label">User Email</label>
+								<label class="form-label">Correo electronico</label>
 								<span class="help"></span>
 								<div class="controls">
 									<input type="email" class="form-control" name="email" 
@@ -27,9 +27,9 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<input type="submit" class="btn btn-success" value="Update">
+								<input type="submit" class="btn btn-success" value="Actualizar">
 								<a href="<?php echo base_url();?>index.php?admin/user_list" 
-									class="btn btn-default">Go back
+									class="btn btn-default">Regresar
 								</a>
 							</div>
 						</div>

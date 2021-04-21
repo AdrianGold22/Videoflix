@@ -19,7 +19,7 @@
 		</div>
 		<a href="<?php echo base_url();?>index.php?browse/playmovie/<?php echo $featured_movie->movie_id;?>" 
 			class="btn btn-danger btn-lg" style="font-size: 20px;"> 
-		<b><i class="fa fa-play"></i> PLAY</b>
+		<b><i class="fa fa-play"></i> Leer</b>
 		</a>
 		<!-- ADD OR DELETE FROM PLAYLIST -->
 		<span id="mylist_button_holder">
@@ -27,7 +27,7 @@
 		<span id="mylist_add_button" style="display:none;">
 		<a href="#" class="btn  btn-lg btn_opaque"
 			onclick="process_list('movie' , 'add', <?php echo $featured_movie->movie_id;?>)"> 
-		<b><i class="fa fa-plus"></i> MY LIST</b>
+		<b><i class="fa fa-plus"></i> Favorito</b>
 		</a>
 		</span>
 		<span id="mylist_delete_button" style="display:none;">
