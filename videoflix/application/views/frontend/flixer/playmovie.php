@@ -163,7 +163,7 @@
 			<span id="mylist_button_holder">
 			</span>
 			<span id="mylist_add_button" style="display:none;">
-			<a href="#" class="btn btn-danger btn-md" style="font-size: 16px; margin-top: 20px;" 
+			<a href="#" class="btn btn-primary btn-md" style="font-size: 16px; margin-top: 20px;" 
 				onclick="process_list('movie' , 'add', <?php echo $row['movie_id'];?>)"> 
 			<i class="fa fa-plus"></i> Agregar a favoritos
 			</a>
@@ -190,7 +190,7 @@
 	<div class="row" style="margin-top:20px;">
 		<div class="col-lg-12">
 			<div class="bs-component">
-				<ul class="nav nav-tabs">
+				<ul class="nav nav-tabs-1">
 					<li class="active" style="width:33%;">
 						<a href="#about" data-toggle="tab">
 						Informacion

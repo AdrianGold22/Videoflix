@@ -137,37 +137,37 @@
 			<span id="mylist_button_holder">
 			</span>
 			<span id="mylist_add_button" style="display:none;">
-			<a href="#" class="btn btn-danger btn-md" style="font-size: 16px; margin-top: 20px;" 
+			<a href="#" class="btn btn-primary btn-md" style="font-size: 16px; margin-top: 20px;" 
 				onclick="process_list('series' , 'add', <?php echo $row['series_id'];?>)"> 
-			<i class="fa fa-plus"></i> Add to My list
+			<i class="fa fa-plus"></i> Agregar a favoritos
 			</a>
 			</span>
 			<span id="mylist_delete_button" style="display:none;">
 			<a href="#" class="btn btn-default btn-md" style="font-size: 16px; margin-top: 20px;" 
 				onclick="process_list('series' , 'delete', <?php echo $row['series_id'];?>)"> 
-			<i class="fa fa-check"></i> Added to My list
+			<i class="fa fa-check"></i> Agregar a favoritos
 			</a>
 			</span>
 			<!-- MOVIE GENRE -->
 			<div style="margin-top: 10px;">
-				<strong>Genre</strong> : 
+				<strong>Tematica</strong> : 
 				<a href="<?php echo base_url();?>index.php?browse/series/<?php echo $row['genre_id'];?>">
 				<?php echo $this->db->get_where('genre',array('genre_id'=>$row['genre_id']))->row()->name;?>
 				</a>
 			</div>
 			<!-- MOVIE YEAR -->
 			<div>
-				<strong>Year</strong> : <?php echo $row['year'];?>
+				<strong>Año</strong> : <?php echo $row['year'];?>
 			</div>
 		</div>
 	</div>
 	<div class="row" style="margin-top:20px;">
 		<div class="col-lg-12">
 			<div class="bs-component">
-				<ul class="nav nav-tabs">
+				<ul class="nav nav-tabs-1">
 					<li style="width:25%;">
 						<a href="#about" data-toggle="tab">
-						About
+						Informacion
 						</a>
 					</li>
 					<li class="active" style="width:25%;">
@@ -177,12 +177,12 @@
 					</li>
 					<li style="width:25%;">
 						<a href="#cast" data-toggle="tab">
-						Cast
+						Autor
 						</a>
 					</li>
 					<li style="width:25%;">
 						<a href="#more" data-toggle="tab">
-						More
+						Mas informacion
 						</a>
 					</li>
 				</ul>

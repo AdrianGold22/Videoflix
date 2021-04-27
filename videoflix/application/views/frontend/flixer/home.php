@@ -18,7 +18,7 @@
 			<?php echo $featured_movie->description_short;?>
 		</div>
 		<a href="<?php echo base_url();?>index.php?browse/playmovie/<?php echo $featured_movie->movie_id;?>" 
-			class="btn btn-danger btn-lg" style="font-size: 20px;"> 
+			class="btn btn-primary btn-lg" style="font-size: 20px;"> 
 		<b><i class="fa fa-play"></i> Leer</b>
 		</a>
 		<!-- ADD OR DELETE FROM PLAYLIST -->
@@ -33,7 +33,7 @@
 		<span id="mylist_delete_button" style="display:none;">
 		<a href="#" class="btn  btn-lg btn_opaque"
 			onclick="process_list('movie' , 'delete', <?php echo $featured_movie->movie_id;?>)"> 
-		<b><i class="fa fa-check"></i> MY LIST</b>
+		<b><i class="fa fa-check"></i> Favorito</b>
 		</a>
 		</span>
 	</div>

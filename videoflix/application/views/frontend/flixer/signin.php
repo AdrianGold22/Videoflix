@@ -1,5 +1,5 @@
 <!-- TOP LANDING SECTION -->
-<div style="height:93vh;width:100%;background-image: url(<?php echo base_url().'assets/frontend/'.$selected_theme;?>/images/login_bg.jpg)">
+<div style= "background-color:lightblue;">
 	<!-- logo -->
 	<div style="float: left;">
 		<a href="<?php echo base_url();?>index.php?home">
@@ -32,7 +32,7 @@
 					<div class="black_text">
 						<input type="password" name="password" style="padding: 10px; width:100%;" />
 					</div>
-					<button class="btn btn-danger" style=" width: 100%; margin: 20px 0px;"> Ingresar </button>
+					<button class="btn btn-primary" style="width: 100%; margin: 20px 0px;"> Ingresar </button>
 				</form>
 				<hr>
 				<a href="<?php echo base_url();?>index.php?home/forget">Olvido la contraseña?</a>

@@ -31,7 +31,7 @@
 			<ul class="nav navbar-nav">
 				<!-- MOVIES GENRE WISE-->
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #e50914; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #337ab7; font-weight: bold;">
 						Libros <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
@@ -48,7 +48,7 @@
 				</li>
 				<!-- TV SERIES GENRE WISE-->
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #e50914; font-weight: bold;">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="" style="color: #337ab7; font-weight: bold;">
 						Articulos <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
