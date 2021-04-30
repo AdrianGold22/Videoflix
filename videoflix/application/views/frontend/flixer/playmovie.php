@@ -32,6 +32,15 @@
 <!-- VIDEO PLAYER -->
 
 <div class="video_cover">
+<div class="container" style="padding-top:100px; text-align: center;">
+    <div class="row">
+	     <div class="col-lg-12">
+         <embed src="<?php echo $this->crud_model->get_doc_url($row['movie_id']);?>" type="application/pdf" width="100%" height="1000px" />
+		 </div>
+
+    </div>
+</div>
+<!--
 	<div class="container" style="padding-top:100px; text-align: center;">
 		<div class="row">
 			<div class="col-lg-12">
@@ -40,7 +49,7 @@
 				$iframe_embed = $this->crud_model->is_iframe($row['url']);
 				if ($iframe_embed == true):
 				?>
-				<!-- loads iframe embed option as video player -->
+				
 				<style>
 				.intrinsic-container {
 				  position: relative;
@@ -73,7 +82,7 @@
 				endif;
 				if ($iframe_embed == false):
 				?>
-				<!-- loads jwplayer as video player -->
+				
 				<script type="text/javascript" src="https://jwpsrv.com/library/4+R8PsscEeO69iIACooLPQ.js"></script>
 				<div id="video_player_div"><?php echo $row['title'];?></div>
 				<script>
@@ -91,7 +100,7 @@
 				<?php endif;?>
 			</div>
 		</div>
-	</div>
+	</div>-->
 </div>
 <!-- VIDEO DETAILS HERE -->
 <div class="container" style="margin-top: 30px;">

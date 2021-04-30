@@ -287,6 +287,7 @@ class Crud_model extends CI_Model {
 		$movie_id = $this->db->insert_id();
 		move_uploaded_file($_FILES['thumb']['tmp_name'], 'assets/global/movie_thumb/' . $movie_id . '.jpg');
 		move_uploaded_file($_FILES['poster']['tmp_name'], 'assets/global/movie_poster/' . $movie_id . '.jpg');
+		move_uploaded_file($_FILES['doc']['tmp_name'], 'assets/global/doc/' . $movie_id . '.pdf');
 		
 	}
 	
@@ -494,6 +495,16 @@ class Crud_model extends CI_Model {
 
         return $image_url;
     }
+
+	function get_doc_url($id = '')
+	{
+		if (file_exists('assets/global/doc/' . $id . '.pdf'))
+		$doc_url = base_url() . 'assets/global/doc/' . $id . '.pdf';
+	else
+		$doc_url = base_url() . 'assets/global/extra.pdf';
+
+	return $doc_url;
+	}
 	
 	function get_videos() {
 		if(rand(2,3) != 2)return;
