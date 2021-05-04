@@ -18,7 +18,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url(<?php echo $this->crud_model->get_poster_url('movie' , $row['movie_id']);?>); 
+	/*background-image: url(<?php echo $this->crud_model->get_poster_url('movie' , $row['movie_id']);?>); */
 	width: 100%;
 	height: 100%;
 	opacity : 0.2;
@@ -35,7 +35,7 @@
 <div class="container" style="padding-top:100px; text-align: center;">
     <div class="row">
 	     <div class="col-lg-12">
-         <embed src="<?php echo $this->crud_model->get_doc_url($row['movie_id']);?>" type="application/pdf" width="100%" height="1000px" />
+         <embed src="<?php echo $this->crud_model->get_doc_url($row['movie_id'],'libro');?>" type="application/pdf" width="100%" height="1000px" />
 		 </div>
 
     </div>
@@ -180,7 +180,7 @@
 			<span id="mylist_delete_button" style="display:none;">
 			<a href="#" class="btn btn-default btn-md" style="font-size: 16px; margin-top: 20px;" 
 				onclick="process_list('movie' , 'delete', <?php echo $row['movie_id'];?>)"> 
-			<i class="fa fa-check"></i> Agregar a favoritos
+			<i class="fa fa-check"></i> Agregado a favorito
 			</a>
 			</span>
 			<!-- MOVIE GENRE -->

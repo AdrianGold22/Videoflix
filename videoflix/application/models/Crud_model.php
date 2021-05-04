@@ -287,7 +287,7 @@ class Crud_model extends CI_Model {
 		$movie_id = $this->db->insert_id();
 		move_uploaded_file($_FILES['thumb']['tmp_name'], 'assets/global/movie_thumb/' . $movie_id . '.jpg');
 		move_uploaded_file($_FILES['poster']['tmp_name'], 'assets/global/movie_poster/' . $movie_id . '.jpg');
-		move_uploaded_file($_FILES['doc']['tmp_name'], 'assets/global/doc/' . $movie_id . '.pdf');
+		move_uploaded_file($_FILES['doc']['tmp_name'], 'assets/global/doc/libro/' . $movie_id . '.pdf');
 		
 	}
 	
@@ -315,6 +315,7 @@ class Crud_model extends CI_Model {
 		
 		move_uploaded_file($_FILES['thumb']['tmp_name'], 'assets/global/movie_thumb/' . $movie_id . '.jpg');
 		move_uploaded_file($_FILES['poster']['tmp_name'], 'assets/global/movie_poster/' . $movie_id . '.jpg');
+		move_uploaded_file($_FILES['doc']['tmp_name'], 'assets/global/doc/libro/' . $movie_id . '.pdf');
 		
 	}
 	
@@ -340,6 +341,7 @@ class Crud_model extends CI_Model {
 		$series_id = $this->db->insert_id();
 		move_uploaded_file($_FILES['thumb']['tmp_name'], 'assets/global/series_thumb/' . $series_id . '.jpg');
 		move_uploaded_file($_FILES['poster']['tmp_name'], 'assets/global/series_poster/' . $series_id . '.jpg');
+		move_uploaded_file($_FILES['doc']['tmp_name'], 'assets/global/doc/articulos/' . $series_id . '.pdf');
 		
 	}
 	
@@ -365,6 +367,7 @@ class Crud_model extends CI_Model {
 		
 		move_uploaded_file($_FILES['thumb']['tmp_name'], 'assets/global/series_thumb/' . $series_id . '.jpg');
 		move_uploaded_file($_FILES['poster']['tmp_name'], 'assets/global/series_poster/' . $series_id . '.jpg');
+		move_uploaded_file($_FILES['doc']['tmp_name'], 'assets/global/doc/articulos/' . $series_id . '.pdf');
 		
 	}
 	
@@ -431,9 +434,9 @@ class Crud_model extends CI_Model {
 
 		// Choosing the list between movie and series
 		if ($type == 'movie')
-			$list_field	=	$active_user.'_movielist';
+			$list_field	=	'user1_movielist';
 		else if ($type == 'series')
-			$list_field	=	$active_user.'_serieslist';
+			$list_field	=	'user1_serieslist';
 
 		// Getting the list	
 		$my_list	=	$this->db->get_where('user', array('user_id'=>$user_id))->row()->$list_field;
@@ -456,9 +459,9 @@ class Crud_model extends CI_Model {
 
 		// Choosing the list between movie and series
 		if ($type == 'movie')
-			$list_field	=	$active_user.'_movielist';
+			$list_field	=	'user1_movielist';
 		else if ($type == 'series')
-			$list_field	=	$active_user.'_serieslist';
+			$list_field	=  'user1_serieslist';
 
 		// Getting the list	
 		$my_list	=	$this->db->get_where('user', array('user_id'=>$user_id))->row()->$list_field;
@@ -496,10 +499,10 @@ class Crud_model extends CI_Model {
         return $image_url;
     }
 
-	function get_doc_url($id = '')
+	function get_doc_url($id = '',$type = '')
 	{
-		if (file_exists('assets/global/doc/' . $id . '.pdf'))
-		$doc_url = base_url() . 'assets/global/doc/' . $id . '.pdf';
+		if (file_exists('assets/global/doc/'.$type . '/' . $id . '.pdf'))
+		$doc_url = base_url() . 'assets/global/doc/'. $type. '/' . $id . '.pdf';
 	else
 		$doc_url = base_url() . 'assets/global/extra.pdf';
 

@@ -57,9 +57,9 @@ class Browse extends CI_Controller {
 
 		// Choosing the list between movie and series
 		if ($type == 'movie')
-			$list_field	=	$active_user.'_movielist';
+			$list_field	=	'user1_movielist';
 		else if ($type == 'series')
-			$list_field	=	$active_user.'_serieslist';
+			$list_field	=	'user1_serieslist';
 		
 
 		// Getting the old list	
@@ -95,6 +95,9 @@ class Browse extends CI_Controller {
 		// Push back the new list to old place and update db table
 		$this->db->update('user' , array($list_field => $new_list) , array('user_id' => $user_id));
 		print_r($new_list);
+		print_r($active_user);
+		print_r("hola mundi");
+
 	}
 	
 	function home()

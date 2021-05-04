@@ -23,7 +23,7 @@
 				{
 					$title	=	$this->db->get_where('series' , array('series_id' => $series[$i]))->row()->title;
 					$link	=	base_url().'index.php?browse/playseries/' . $series[$i];
-					$thumb	=	$this->crud_model->get_thumb_url('movie' , $series[$i]);
+					$thumb	=	$this->crud_model->get_thumb_url('series' , $series[$i]);
 					include 'thumb.php';
 				}
 				?>

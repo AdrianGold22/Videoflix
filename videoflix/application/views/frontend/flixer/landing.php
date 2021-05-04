@@ -1,9 +1,9 @@
 <!-- TOP LANDING SECTION -->
-<div style="height:93vh;width:100%;background-image: url(<?php echo base_url().'assets/frontend/flixer/images/home_top_banner.jpg';?>)">
+
 	<!-- logo -->
 	<div style="float: left;">
 		<a href="<?php echo base_url();?>index.php?home">
-		<img src="<?php echo base_url();?>/assets/global/logo.png" style="margin: 18px 18px; width: 160px;" />
+		<img src="<?php echo base_url();?>/assets/global/logo.png" style="margin: 18px 18px; width: 150px;" />
 		</a>
 	</div>
 	<div style="float: right;margin: 18px 18px; height: 50px;" class="hidden-xs">
@@ -23,14 +23,14 @@
 	$featured_movie		=	$this->db->get_where('movie', array('featured'=>1))->row();
 	
 	?>
-<div style="height:85vh;width:100%;background-image: url(<?php echo $this->crud_model->get_poster_url('movie' , $featured_movie->movie_id);?>); background-size:cover;">
+<div style="height:85vh;width:100%;background-image: url(<?php echo base_url().'assets/frontend/flixer/images/libros.jpg';?>); background-size:cover;">
 	<div style="font-size: 85px;font-weight: bold;clear: both;padding: 200px 0px 0px 50px;color: #fff;">
 		<?php echo $featured_movie->title;?>
 		<div style="font-size: 30px; letter-spacing: .2px; color: #fff; font-weight: 400;">
 			<?php echo $featured_movie->description_short;?>
 		</div>
 		<a href="<?php echo base_url();?>index.php?browse/playmovie/<?php echo $featured_movie->movie_id;?>" 
-			class="btn btn-primary btn-lg" style="font-size: 20px;"> 
+			class="btn btn-primary btn-lg" style="font-size: 18px;"> 
 		<b><i class="fa fa-play"></i> Leer</b>
 		</a>
 		
@@ -240,4 +240,3 @@
 		</div>
 	</div>-->
 	<?php include 'footer.php';?>
-</div>

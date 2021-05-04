@@ -11,7 +11,7 @@
 			</ul>
 			<!-- BEGIN LOGO -->
 			<a href="index.html">
-			<img src="<?php echo base_url();?>assets/global/logo.png" class="logo" alt="" data-src="<?php echo base_url();?>assets/global/logo.png" data-src-retina="<?php echo base_url();?>assets/global/logo.png" width="106" height="21" />
+			<img src="<?php echo base_url();?>assets/global/logo.png" class="logo" alt="" data-src="<?php echo base_url();?>assets/global/logo.png" data-src-retina="<?php echo base_url();?>assets/global/logo.png" width="20%" height="50%" />
 			</a>
 			<!-- END LOGO -->
 		</div>

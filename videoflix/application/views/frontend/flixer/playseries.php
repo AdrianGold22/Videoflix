@@ -31,6 +31,16 @@
 </style>
 <!-- VIDEO PLAYER -->
 <div class="video_cover">
+<div class="container" style="padding-top:100px; text-align: center;">
+    <div class="row">
+	     <div class="col-lg-12">
+         <embed src="<?php echo $this->crud_model->get_doc_url($row['series_id']);?>" type="application/pdf" width="100%" height="1000px" />
+		 </div>
+
+    </div>
+</div>
+<!--
+<div class="video_cover">
 	<div class="container" style="padding-top:100px; text-align: center;">
 		<div class="row">
 			<div class="col-lg-12">
@@ -66,7 +76,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- VIDEO DETAILS HERE -->
 <div class="container" style="margin-top: 30px;">
 	<div class="row">

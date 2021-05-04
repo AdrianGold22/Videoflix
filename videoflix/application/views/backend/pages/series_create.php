@@ -22,6 +22,13 @@
 								</div>
 							</div>
 							<div class="form-group">
+								<label class="form-label">Documento</label>
+								<span class="help">- documento pdf</span>
+								<div class="controls">
+									<input type="file" class="form-control" name="doc">
+								</div>
+							</div>
+							<div class="form-group">
 								<label class="form-label">Imagen de fondo</label>
 								<!--<span class="help">- large banner image of the series</span>-->
 								<div class="controls">
