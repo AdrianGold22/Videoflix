@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="<?php echo base_url();?>assets/global/item_thumb.png">
+    <link rel="shortcut icon" href="<?php echo base_url();?>assets/global/lib.jpg">
     <link rel="stylesheet" href="<?php echo base_url() . 'assets/frontend/' . $selected_theme;?>/bootstrap.css" media="screen">
 	<link rel="stylesheet" href="<?php echo base_url() . 'assets/frontend/' . $selected_theme;?>/new_css.css" media="screen">
     <link rel="stylesheet" href="<?php echo base_url() . 'assets/frontend/' . $selected_theme;?>/custom.min.css">

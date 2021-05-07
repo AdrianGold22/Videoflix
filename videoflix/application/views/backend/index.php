@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php echo $page_title; ?> | Videoflix</title>
+		<title><?php echo $page_title; ?> | Dran Digital</title>
 		<!-- all the meta tags -->
 		<?php include 'metas.php'; ?>
 		<!-- all the css files -->
