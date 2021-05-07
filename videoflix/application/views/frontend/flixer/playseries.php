@@ -175,22 +175,22 @@
 		<div class="col-lg-12">
 			<div class="bs-component">
 				<ul class="nav nav-tabs-1">
-					<li style="width:25%;">
+					<li style="width:33%;">
 						<a href="#about" data-toggle="tab">
 						Informacion
 						</a>
 					</li>
-					<li class="active" style="width:25%;">
+					<!--<li class="active" style="width:25%;">
 						<a href="#episode" data-toggle="tab">
 						Episode
 						</a>
-					</li>
-					<li style="width:25%;">
+					</li>-->
+					<li style="width:33%;">
 						<a href="#cast" data-toggle="tab">
 						Autor
 						</a>
 					</li>
-					<li style="width:25%;">
+					<li style="width:33%;">
 						<a href="#more" data-toggle="tab">
 						Mas informacion
 						</a>

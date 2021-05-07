@@ -21,7 +21,7 @@ class Home extends CI_Controller {
 	{
 		$this->login_check();
 		$page_data['page_name']		=	'landing';
-		$page_data['page_title']	=	'Welcome';
+		$page_data['page_title']	=	'Bienvenido';
 		$this->load->view('frontend/index', $page_data);
 	}
 	
@@ -46,7 +46,7 @@ class Home extends CI_Controller {
 				
 		}
 		$page_data['page_name']		=	'signup';
-		$page_data['page_title']	=	'Sign up';
+		$page_data['page_title']	=	'Registro';
 		$this->load->view('frontend/index', $page_data);
 		
 	}
@@ -70,7 +70,7 @@ class Home extends CI_Controller {
 				redirect(base_url().'index.php?home/signin' , 'refresh');
 		}
 		$page_data['page_name']		=	'signin';
-		$page_data['page_title']	=	'Sign in';
+		$page_data['page_title']	=	'Ingreso';
 		$this->load->view('frontend/index', $page_data);
 		
 	}
@@ -84,7 +84,7 @@ class Home extends CI_Controller {
 			redirect(base_url().'index.php?home/forget' , 'refresh');
 		}
 		$page_data['page_name']		=	'forget';
-		$page_data['page_title']	=	'Forget Password';
+		$page_data['page_title']	=	'Recuperar contraseña';
 		$this->load->view('frontend/index', $page_data);
 		
 	}

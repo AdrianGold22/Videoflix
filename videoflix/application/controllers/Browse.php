@@ -43,7 +43,7 @@ class Browse extends CI_Controller {
 		}
 		$page_data['page_name']		=	'search';
 		$page_data['search_key']	=	$search_key;
-		$page_data['page_title']	=	'Search result';
+		$page_data['page_title']	=	'Buscar';
 		$this->load->view('frontend/index', $page_data);
 		
 	}
@@ -105,14 +105,14 @@ class Browse extends CI_Controller {
 		//$this->subscription_check();
 		//$this->active_user_check();
 		$page_data['page_name']		=	'home';
-		$page_data['page_title']	=	'Home';
+		$page_data['page_title']	=	'Inicio';
 		$this->load->view('frontend/index', $page_data);
 	}
 	
 	function movie($genre_id = '', $offset = '')
 	{
 		$page_data['page_name']		=	'movie';
-		$page_data['page_title']	=	'Watch Movie';
+		$page_data['page_title']	=	'Leer libro';
 		$page_data['genre_id']	=	$genre_id;
 		
 		// pagination configuration
@@ -132,14 +132,14 @@ class Browse extends CI_Controller {
 	function mylist()
 	{
 		$page_data['page_name']		=	'mylist';
-		$page_data['page_title']	=	'My List';
+		$page_data['page_title']	=	'Favoritos';
 		$this->load->view('frontend/index', $page_data);
 	}
 	
 	function series($genre_id = '', $offset = '')
 	{
 		$page_data['page_name']		=	'series';
-		$page_data['page_title']	=	'Watch Tv Series';
+		$page_data['page_title']	=	'Leer articulo';
 		$page_data['genre_id']	=	$genre_id;
 		
 		// pagination configuration
@@ -159,7 +159,7 @@ class Browse extends CI_Controller {
 	function playmovie($movie_id = '')
 	{
 		$page_data['page_name']		=	'playmovie';
-		$page_data['page_title']	=	'Watch Movie';
+		$page_data['page_title']	=	'Leer libro';
 		$page_data['movie_id']		=	$movie_id;
 		$this->load->view('frontend/index', $page_data);
 	}
@@ -181,7 +181,7 @@ class Browse extends CI_Controller {
 		
 		$page_data['series_id']		=	$series_id;
 		$page_data['page_name']		=	'playseries';
-		$page_data['page_title']	=	'Watch Tv Series';
+		$page_data['page_title']	=	'Leer articulo';
 		$page_data['series_id']		=	$series_id;
 		$this->load->view('frontend/index', $page_data);
 	}
@@ -189,7 +189,7 @@ class Browse extends CI_Controller {
 	function youraccount()
 	{
 		$page_data['page_name']		=	'youraccount';
-		$page_data['page_title']	=	'Your Account';
+		$page_data['page_title']	=	'Tu cuenta';
 		$this->load->view('frontend/index', $page_data);
 	}
 	
@@ -239,7 +239,7 @@ class Browse extends CI_Controller {
 			redirect(base_url().'index.php?browse/manageprofile' , 'refresh');
 		}
 		$page_data['page_name']			=	'editprofile';
-		$page_data['page_title']		=	'Edit Profile';
+		$page_data['page_title']		=	'Editar Perfil';
 		$page_data['user']				=	$user;
 		$this->load->view('frontend/index', $page_data);
 		
@@ -281,7 +281,7 @@ class Browse extends CI_Controller {
 			redirect(base_url().'index.php?browse/manageprofile' , 'refresh');
 		}
 		$page_data['page_name']			=	'emailchange';
-		$page_data['page_title']		=	'Chane email address';
+		$page_data['page_title']		=	'Cambiar correo';
 		$this->load->view('frontend/index', $page_data);
 		
 	}
@@ -320,7 +320,7 @@ class Browse extends CI_Controller {
 			redirect(base_url().'index.php?browse/manageprofile' , 'refresh');
 		}
 		$page_data['page_name']			=	'passwordchange';
-		$page_data['page_title']		=	'Change Password';
+		$page_data['page_title']		=	'Cambiar contraseña';
 		$this->load->view('frontend/index', $page_data);
 		
 	}

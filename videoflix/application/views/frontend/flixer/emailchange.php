@@ -7,37 +7,37 @@
 			<!-- ERROR MESSAGE --> 
 			<div class="alert alert-dismissible alert-danger">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
-			  Email already exists or password wrong given. Please try again.
+			  Correo ya existe o contraseña incorrecta. Por favor intente de nuevo.
 			</div>
 		<?php endif;?>
 		<div class="col-lg-12">
-			<h3 class="black_text">Change Email</h3>
+			<h3 class="black_text">Cambiar correo</h3>
 			<hr>
 		</div>
 		<div class="col-lg-5">
 			<form method="post" action="<?php echo base_url();?>index.php?browse/emailchange">
 				<div class="">
-					Current Email 
+					Correo actual 
 				</div>
 				<div class="black_text">
 					<?php echo $this->crud_model->get_current_user_detail()->email;?>
 				</div>
 				<br>
 				<div class="">
-					New Email 
+					Nuevo correo 
 				</div>
 				<div class="black_text">
 					<input type="email" name="new_email" style="padding: 10px; width:100%;" />
 				</div>
 				<div class="" style="margin-top: 20px;">
-					Current Password
+					Contraseña
 				</div>
 				<div class="black_text">
 					<input type="password" name="old_password" style="padding: 10px; width:100%;" />
 				</div>
 				<br>
-					<button class="btn btn-primary" type="submit"> Save </button>
-					<a href="<?php echo base_url();?>index.php?browse/youraccount" class="btn btn-default">Cancel</a>
+					<button class="btn btn-primary" type="submit"> Guardar </button>
+					<a href="<?php echo base_url();?>index.php?browse/youraccount" class="btn btn-default">Cancelar</a>
 			</form>
 		</div>
 	</div>
