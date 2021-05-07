@@ -32,10 +32,10 @@
 <!-- VIDEO PLAYER -->
 
 <div class="video_cover">
-<div class="container" style="padding-top:100px; text-align: center;">
-    <div class="row">
-	     <div class="col-lg-12">
-         <embed src="<?php echo $this->crud_model->get_doc_url($row['movie_id'],'libro');?>" type="application/pdf" width="100%" height="1000px" />
+<div class="container" style="padding-top:100px;text-align: center;">
+    <div class="row" >
+	     <div class="col-lg-12" style="height: 800px;">
+         <embed src="<?php echo $this->crud_model->get_doc_url($row['movie_id'],'libro');?>#view=Fit" type="application/pdf" width="100%" height="100%"  />
 		 </div>
 
     </div>
