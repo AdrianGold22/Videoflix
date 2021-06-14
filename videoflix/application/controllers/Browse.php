@@ -9,7 +9,7 @@ class Browse extends CI_Controller {
 		parent::__construct();
 		$this->load->database();
 		$this->load->library('session');
-		$this->login_check();
+		//$this->login_check();
 
 		$called_function	=	$this->router->fetch_method();
 		
@@ -159,7 +159,7 @@ class Browse extends CI_Controller {
 	function playmovie($movie_id = '')
 	{
 		$page_data['page_name']		=	'playmovie';
-		$page_data['page_title']	=	'Leer libro';
+		$page_data['page_title']	=	'Leer libre';
 		$page_data['movie_id']		=	$movie_id;
 		$this->load->view('frontend/index', $page_data);
 	}

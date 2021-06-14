@@ -22,14 +22,40 @@
 		<b><i class="fa fa-play"></i> Leer</b>
 		</a>
 		<!-- ADD OR DELETE FROM PLAYLIST -->
+        <?php
+			if ($this->session->userdata('user_login_status') == 0) :
+			?>
+		<span id="mylist_button_holder">
+		</span>
+		<span id="mylist_add_button" style="display:none;">
+		<a href="<?php echo base_url();?>index.php?home/signin" class="btn  btn-lg btn_opaque"
+		
+		
+		onclick=""> 
+			
+			
+		
+		<b><i class="fa fa-plus"></i> Favorito</b>
+		</a>
+		</span>
+		<?php endif; ?>
+
+		<?php
+			if ($this->session->userdata('user_login_status') == 1) :
+			?>
 		<span id="mylist_button_holder">
 		</span>
 		<span id="mylist_add_button" style="display:none;">
 		<a href="#" class="btn  btn-lg btn_opaque"
-			onclick="process_list('movie' , 'add', <?php echo $featured_movie->movie_id;?>)"> 
+		
+		onclick="process_list('movie' , 'add', <?php echo $featured_movie->movie_id;?>)"> 
+			
+		
 		<b><i class="fa fa-plus"></i> Favorito</b>
 		</a>
 		</span>
+		<?php endif; ?>
+
 		<span id="mylist_delete_button" style="display:none;">
 		<a href="#" class="btn  btn-lg btn_opaque"
 			onclick="process_list('movie' , 'delete', <?php echo $featured_movie->movie_id;?>)"> 

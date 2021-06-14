@@ -103,6 +103,22 @@
 					}
 				}
 				?>
+
+
+            <?php
+			if ($this->session->userdata('user_login_status') == 0) :
+			?>
+
+				<div style="float: right;margin: 18px 18px; height: 0px;" class="hidden-xs">
+					<a href="<?php echo base_url(); ?>index.php?home/signin" class="btn btn-primary" style="margin-top:-10px">Ingresar</a>
+				</div>
+			<?php endif; ?>
+
+
+			<?php
+			if ($this->session->userdata('user_login_status') == 1) :
+			?>
+
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding:10px;">
@@ -110,51 +126,7 @@
 					<?php echo $bar_text;?>
 					<span class="caret"></span></a>
 					<ul class="dropdown-menu" aria-labelledby="themes">
-						<?php 
-							// user list shown only if there is active subscription 
-							if ($subscription_validation != false):
-							  $current_plan_id	=	$this->crud_model->get_current_plan_id();
-							  ?>
-						<li>
-							<a href="<?php echo base_url();?>index.php?browse/doswitch/user1">
-							<img src="<?php echo base_url();?>assets/global/thumb1.png" 
-								style="height:30px; margin: 5px;" /><?php echo $this->crud_model->get_username_of_user('user1');?>
-							</a>
-						</li>
-						<?php
-							if ($current_plan_id == 2 || $current_plan_id == 3):
-							?>
-						<li>
-							<a href="<?php echo base_url();?>index.php?browse/doswitch/user2">
-							<img src="<?php echo base_url();?>assets/global/thumb2.png" 
-								style="height:30px; margin: 5px;" /><?php echo $this->crud_model->get_username_of_user('user2');?>
-							</a>
-						</li>
-						<?php endif;?>
-						<?php
-							if ($current_plan_id == 3):
-							?>
-						<li>
-							<a href="<?php echo base_url();?>index.php?browse/doswitch/user3">
-							<img src="<?php echo base_url();?>assets/global/thumb3.png" 
-								style="height:30px; margin: 5px;" /><?php echo $this->crud_model->get_username_of_user('user3');?>
-							</a>
-						</li>
-						<?php endif;?>
-						<?php
-							if ($current_plan_id == 3):
-							?>
-						<li>
-							<a href="<?php echo base_url();?>index.php?browse/doswitch/user4">
-							<img src="<?php echo base_url();?>assets/global/thumb4.png" 
-								style="height:30px; margin: 5px;" /><?php echo $this->crud_model->get_username_of_user('user4');?>
-							</a>
-						</li>
-						<?php endif;?>
-						<?php endif;?>
-						<li class="divider"></li>
-						<!--<li><a href="<?php echo base_url();?>index.php?browse/manageprofile">Manage Profiles</a></li>-->
-						<li class="divider"></li>
+						
 						<!-- SHOW ADMIN LINK IF ADMIN LOGGED IN -->
 						<?php 
 							if($this->session->userdata('login_type') == 1):
@@ -166,6 +138,7 @@
 					</ul>
 				</li>
 			</ul>
+			<?php endif; ?>
 			<!-- SEARCH FORM -->
 			<form class="navbar-form navbar-right" method="post" action="<?php echo base_url();?>index.php?browse/search">
 				<div class="form-group">
